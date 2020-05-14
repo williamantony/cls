@@ -1,0 +1,41 @@
+{
+    "name": "cls",
+    "displayName": "CLS - Common Language Snippets",
+    "description": "",
+    "publisher": "williamantony",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/williamantony/cls.git"
+    },
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/react-component-snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/react-methods-snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/react-redux-snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/redux-snippets.json"
+            }
+        ]
+    }
+}
