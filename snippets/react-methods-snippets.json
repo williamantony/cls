@@ -1,0 +1,85 @@
+{
+  "React.Constructor": {
+		"description": "React: Constructor for Class Component",
+		"prefix": "react.constructor",
+		"body": [
+			"\tconstructor(props) {",
+			"\t\tsuper(props);",
+			"\t\t${1:this.state = {",
+			"\t\t\t$0",
+			"\t\t\\};}",
+			"\t}",
+			""
+		]
+	},
+	
+  "React.Mount": {
+		"description": "React: componentDidMount()",
+		"prefix": "react.mount",
+		"body": [
+			"\tcomponentDidMount() {",
+			"\t\t$0",
+			"\t}",
+			""
+		]
+	},
+	
+  "React.UnMount": {
+		"description": "React: componentWillUnmount()",
+		"prefix": "react.unmount",
+		"body": [
+			"\tcomponentWillUnmount() {",
+			"\t\t$0",
+			"\t}",
+			""
+		]
+	},
+	
+  "React.Catch": {
+		"description": "React: componentDidCatch()",
+		"prefix": "react.catch",
+		"body": [
+			"\tcomponentDidCatch(error, info) {",
+			"\t\t$0",
+			"\t}",
+			""
+		]
+	},
+	
+  "React.GetDerivedStateFromProps": {
+		"description": "React: getDerivedStateFromProps()",
+		"prefix": "react.props-state",
+		"body": [
+			"\tstatic getDerivedStateFromProps(props, state) {",
+			"\t\treturn ${0:null};",
+			"\t}",
+			""
+		]
+	},
+	
+  "React.GetDerivedStateFromError": {
+		"description": "React: getDerivedStateFromError()",
+		"prefix": "react.error-state",
+		"body": [
+			"\tstatic getDerivedStateFromError(error) {",
+			"\t\t$0",
+			"\t}",
+			""
+		]
+	},
+
+  "React.Render": {
+		"description": "React: render()",
+		"prefix": "react.render",
+		"body": [
+			"\trender() {",
+			"\t\treturn ${1:(",
+			"\t\t\t<div className=\"$TM_FILENAME_BASE\">",
+			"\t\t\t\t$0",
+			"\t\t\t</div>",
+			"\t\t)};",
+			"\t}",
+			""
+		]
+	}
+}

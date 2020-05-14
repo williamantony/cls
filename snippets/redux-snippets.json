@@ -1,0 +1,59 @@
+{
+	"Redux.Reducer": {
+		"description": "Redux Reducer template",
+		"prefix": "redux.reducer",
+		"body": [
+			"const initialState = {",
+			"\t",
+			"};",
+			"",
+			"export default function(state = initialState, action) {",
+			"\tswitch(action.type) {",
+			"",
+			"\t\t$0",
+			"",
+			"\t\tdefault:",
+			"\t\t\treturn state;",
+			"\t}",
+			"};",
+			""
+		]
+  },
+  
+	"Redux.Action.Const": {
+		"description": "Redux Action Constant",
+		"prefix": "redux.action.const",
+		"body": [
+			"export const ${1:CONSTANT_NAME} = \"$1\";"
+		]
+  },
+  
+	"Redux.Action.Function": {
+		"description": "Redux Action Creator Function template",
+		"prefix": "redux.action.function",
+		"body": [
+			"export const ${1:functionName} = ${2:()} => {",
+			"\treturn {",
+			"\t\ttype: ${3:CONSTANT_NAME},",
+			"\t\tpayload: {",
+			"\t\t\t$4",
+			"\t\t},",
+			"\t};",
+			"};",
+			""
+		]
+  },
+  
+	"Redux.Action.Function.Dispatch": {
+		"description": "Redux Action Creator Function with Dispatch template",
+		"prefix": "redux.action.function.dispatch",
+		"body": [
+			"export const ${1:functionName} = ${2:()} => {",
+			"\treturn dispatch => {",
+			"\t\t$3",
+			"\t};",
+			"};",
+			""
+		]
+  }
+}

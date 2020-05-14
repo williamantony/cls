@@ -1,0 +1,43 @@
+{
+  "React.Function": {
+		"description": "React: Function Component",
+		"prefix": "react.function",
+		"body": [
+			"import React from \"react\";",
+			"",
+			"const ${1:$TM_FILENAME_BASE} = function(props) {",
+			"\treturn ${2:(",
+			"\t\t<div className=\"$1\">",
+			"\t\t\t$0",
+			"\t\t</div>",
+			"\t)};",
+			"}",
+			"",
+			"export default $1;",
+			""
+		]
+	},
+
+  "React.Class": {
+		"description": "React: Class Component",
+		"prefix": "react.class",
+		"body": [
+			"import React, { Component } from \"react\";",
+			"",
+			"class ${1:$TM_FILENAME_BASE} extends Component {",
+			"",
+			"\trender() {",
+			"\t\treturn ${2:(",
+			"\t\t\t<div className=\"$1\">",
+			"\t\t\t\t$0",
+			"\t\t\t</div>",
+			"\t\t)};",
+			"\t}",
+			"",
+			"}",
+			"",
+			"export default $1;",
+			""
+		]
+	}
+}

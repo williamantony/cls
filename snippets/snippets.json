@@ -1,0 +1,10 @@
+{
+	"Import CSS": {
+		"description": "Import CSS for component",
+		"prefix": "css.import",
+		"body": [
+			"import \"./${1:$TM_FILENAME_BASE}.css\";",
+			""
+		]
+	}
+}

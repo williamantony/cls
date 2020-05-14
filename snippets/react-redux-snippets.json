@@ -1,0 +1,62 @@
+{
+	"React.Connect-Redux": {
+		"description": "React: Connect to Redux",
+		"prefix": "react.connect-redux",
+		"body": [
+			"const mapStateToProps = state => {",
+      "\treturn ${1:{",
+      "\t\t$0",
+      "\t\\}};",
+			"};",
+			"",
+			"const mapDispatchToProps = {",
+			"\t$2",
+			"};",
+			"",
+			"export default connect(mapStateToProps, mapDispatchToProps)(${3:$TM_FILENAME_BASE});",
+			""
+		]
+  },
+  
+	"Redux.MapStateToProps": {
+		"description": "Redux: mapStateToProps",
+		"prefix": "redux.mapStateToProps",
+		"body": [
+			"const mapStateToProps = state => {",
+      "\treturn ${1:{",
+      "\t\t$0",
+      "\t\\}};",
+			"};",
+			""
+		]
+  },
+  
+	"Redux.MapDispatchToProps": {
+		"description": "Redux: mapDispatchToProps",
+		"prefix": "redux.mapDispatchToProps",
+		"body": [
+			"const mapDispatchToProps = {",
+			"\t$0",
+			"};",
+			""
+		]
+	},
+
+	"React.Export": {
+		"description": "Export React Component",
+		"prefix": "react.export",
+		"body": [
+			"export default ${1:$TM_FILENAME_BASE};",
+			""
+		]
+  },
+  
+	"React.Export-Redux": {
+		"description": "Export React Component with Redux",
+		"prefix": "react.export-redux",
+		"body": [
+			"export default connect(mapStateToProps, mapDispatchToProps)(${1:$TM_FILENAME_BASE});",
+			""
+		]
+  }
+}
