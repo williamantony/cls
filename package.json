@@ -4,6 +4,7 @@
     "description": "",
     "publisher": "williamantony",
     "version": "1.0.0",
+    "icon": "extension-icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/williamantony/cls.git"
