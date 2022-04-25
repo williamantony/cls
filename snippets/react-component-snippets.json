@@ -54,6 +54,7 @@
 			"\t\t</View>",
 			"\t)};",
 			"}",
+			"const styles = StyleSheet.create({})",
 			"",
 			"export default $1;",
 			""
