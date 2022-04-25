@@ -39,5 +39,24 @@
 			"export default $1;",
 			""
 		]
+	},
+
+	"React.Native.Function": {
+		"description": "React-Native: Functional Component",
+		"prefix": "react.native.function",
+		"body": [
+			"import React from \"react\";", "import { View, Text, StyleSheet } from \"react-native\";",
+			"",
+			"const ${1:$TM_FILENAME_BASE} = function(props) {",
+			"\treturn ${2:(",
+			"\t\t<View>",
+			"\t\t\t$0",
+			"\t\t</View>",
+			"\t)};",
+			"}",
+			"",
+			"export default $1;",
+			""
+		]
 	}
 }
